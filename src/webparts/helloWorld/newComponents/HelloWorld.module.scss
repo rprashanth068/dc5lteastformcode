@@ -1,0 +1,1082 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+
+.helloWorld {
+  .container {
+    max-width: 700px;
+    position: fix;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .row {
+    //@include ms-Grid-row;
+    margin: 0 -8px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    padding: 10px 20px 10px 10px;
+    display: flex;
+    //@include ms-fontColor-white;
+    // background-color: $ms-color-themeDark;
+  }
+
+  .homeQuarterRow {
+    padding-top: 0;
+    .flex1 {
+      flex: 1;
+    }
+    .flex2 {
+      flex: 2;
+      .alignCheckbox {
+        margin-top: 33px;
+        margin-left: 10px;
+        margin-top: 33px;
+        input[type="checkbox"] {
+          height: 20px;
+          width: 20px;
+          position: relative;
+          top: -4px;
+        }
+      }
+    }
+  }
+
+  .headerRow {
+    background-color: #52525b;
+    margin: 0;
+    padding: 0 10px;
+    height: 24px;
+    .flex1 {
+      flex: 1;
+    }
+    .flex2 {
+      flex: 2;
+    }
+    .flex3 {
+      flex: 3;
+      padding-left: 20px;
+      margin-left: -20px;
+    }
+    .flex7 {
+      flex: 7;
+    }
+    .toggleContainer {
+      padding-top: 5px;
+      margin-left: 20px;
+      .toggleIcon {
+        top: 2px;
+        position: relative;
+        margin: 0 5px;
+      }
+    }
+  }
+
+  .deceasedCheckBox {
+    float: right;
+    position: relative;
+    top: -20px;
+    right: 50px;
+    input {
+      top: 4px;
+      position: relative;
+    }
+  }
+
+  .namesRow {
+    width: 90%;
+    .flex2 {
+      flex: 2;
+    }
+    .flex3 {
+      flex: 3;
+    }
+    .flex2,
+    .flex3 {
+      padding: 0 10px 0 0;
+    }
+  }
+
+  .contactRow,
+  .taxRow {
+    .flex1 {
+      flex: 1;
+    }
+    .flex2 {
+      flex: 2;
+    }
+    .flex3 {
+      flex: 3;
+    }
+    .flex1,
+    .flex2,
+    .flex3 {
+      padding: 0 10px 0 0;
+    }
+  }
+  .contactRow.emailRow {
+    padding-top: 0;
+  }
+
+  .addressRow {
+    .flex1 {
+      flex: 1;
+      textarea {
+        height: 100px;
+      }
+    }
+  }
+
+  .parentRow {
+    .flex2 {
+      flex: 2;
+    }
+    .flex3 {
+      flex: 3;
+    }
+    .flex7 {
+      flex: 7;
+      .typeaheadwidth {
+        input {
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  .tableInputSignaturies {
+    padding-bottom: 2px;
+    span {
+      position: relative;
+      top: -4px;
+    }
+    .entityInput {
+      padding-top: 0;
+      input {
+        height: 28px;
+        width: 100%;
+        margin-top: -10px;
+      }
+    }
+
+    .form-check-input {
+      width: 20px !important;
+      height: 20px !important;
+      margin-top: 0.2rem;
+      margin-left: 11px;
+    }
+
+    .flex7 {
+      flex: 7;
+      padding-right: 10px;
+    }
+
+    .preffered-signatory-checkbox-container {
+      width: 60px;
+      margin-left: 12px;
+      margin-top: -27px;
+      top: -6px;
+    }
+
+    .preffered-sign {
+      color: black;
+    }
+  }
+
+  .entityNameRow {
+    .flex1 {
+      flex: 1;
+      // margin-top: 7px;
+      height: 27px;
+      label {
+        position: relative;
+      }
+      input {
+        height: 27px;
+      }
+      .entityInput {
+        padding-top: 0;
+        margin-top: -7px;
+        background-color: white;
+        border: 1px solid #000;
+        input {
+          height: 27px;
+          border: none;
+          .marginco {
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+    .flex4 {
+      flex: 4;
+      padding-right: 10px;
+    }
+  }
+
+  .togglespan {
+    color: black;
+  }
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+  .col-1 {
+    @include ms-Grid-col;
+    @include ms-lg1;
+  }
+  .col-2 {
+    @include ms-Grid-col;
+    @include ms-lg2;
+  }
+  .col-3 {
+    @include ms-Grid-col;
+    @include ms-lg3;
+  }
+  .col-4 {
+    @include ms-Grid-col;
+    @include ms-lg4;
+  }
+  .col-5 {
+    @include ms-Grid-col;
+    @include ms-lg5;
+  }
+  .col-6 {
+    @include ms-Grid-col;
+    @include ms-lg6;
+  }
+  .col-7 {
+    @include ms-Grid-col;
+    @include ms-lg7;
+  }
+  .col-8 {
+    @include ms-Grid-col;
+    @include ms-lg8;
+  }
+  .col-9 {
+    @include ms-Grid-col;
+    @include ms-lg9;
+  }
+  .col-10 {
+    @include ms-Grid-col;
+    @include ms-lg10;
+  }
+  .col-11 {
+    @include ms-Grid-col;
+    @include ms-lg11;
+  }
+  .col-12 {
+    @include ms-Grid-col;
+    @include ms-lg12;
+  }
+
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .label {
+    color: black;
+  }
+
+  .ms-TextField {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    .ms-Label {
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+      color: #333;
+      font-size: 12px;
+      box-sizing: border-box;
+      display: block;
+      padding: 5px 0;
+    }
+    .ms-TextField-field {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+      border: 1px solid #c8c8c8;
+      border-radius: 0;
+      font-weight: 300;
+      font-size: 14px;
+      color: #333;
+      height: 32px;
+      padding: 6px 12px 7px;
+      width: 100%;
+      outline: 0;
+      text-overflow: ellipsis;
+      border: 1px solid #000;
+    }
+  }
+
+  .ms-CheckBoxField {
+    display: inline-block;
+    .ms-Label {
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+      color: #333;
+      font-size: 12px;
+      box-sizing: border-box;
+      display: block;
+      padding: 5px 0;
+    }
+    .ms-TextField-field {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+      border: 1px solid #c8c8c8;
+      border-radius: 0;
+      font-weight: 300;
+      font-size: 14px;
+      color: #333;
+      height: 32px;
+      padding: 6px 12px 7px;
+      width: 100%;
+      outline: 0;
+      text-overflow: ellipsis;
+    }
+    span {
+      color: black;
+      vertical-align: top;
+    }
+    .alignCheckbox {
+      padding-top: 30px;
+    }
+  }
+  .formHeading {
+    margin: 0px;
+    color: black;
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+
+    // Primary Button
+    min-width: 80px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI WestEuropean", "Segoe UI", -apple-system,
+      BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+  }
+  .App {
+    text-align: center;
+  }
+
+  .myform {
+    border: 1px solid #52525b;
+    background-color: #cccccc;
+    padding-left: 10px;
+    font-size: 12px;
+    overflow-y: scroll;
+    max-height: 900px;
+    padding-top: 10px;
+    input {
+      border: 1px solid #333;
+      height: 26px;
+    }
+  }
+
+  .main-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 8px 10px 8px #52525b;
+    padding: 0px;
+  }
+  .contactHeader {
+    background-color: #003;
+    height: 26px;
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 7px 10px;
+  }
+
+  /*   .contact-header{
+    background-color: #003;
+    height: 34px;
+    color: #fff;
+    font-size: 15px;
+    margin: 0 0 0 0;
+    padding-top: 11px;
+    margin-left: -4px;
+    padding-left: 11px; */
+
+  .contact-toolbar {
+    background-color: #52525b;
+    height: 34px;
+    padding-left: 5px;
+    color: white;
+  }
+  .saveicons {
+    margin: 5px;
+    padding-right: 10px;
+  }
+  .deleteicons {
+    margin: 2px;
+    padding: 2px;
+  }
+  .commentsLabel {
+    margin: 8px 0;
+  }
+  .editIcons {
+    margin: 0px 2px;
+    padding-right: 5px;
+  }
+
+  .togglecontrol {
+    margin-left: 100px;
+    padding: 5px;
+    margin-top: -25px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .namemargin {
+    margin-top: 15px;
+  }
+
+  .container myform {
+    font-size: 12px;
+  }
+
+  .mobileno {
+    width: 100px;
+    margin-left: -70px;
+  }
+  .businessphn {
+    width: 100px;
+    margin-left: -138px;
+  }
+  .extension {
+    width: 50px;
+    margin-left: -203px;
+  }
+  .faxno {
+    width: 100px;
+    margin-left: -225px;
+  }
+  .city {
+    width: 150px;
+    margin-left: 20px;
+  }
+  .province {
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .country {
+    width: 150px;
+  }
+  .postalcode {
+    width: 150px;
+    margin-top: 10px;
+  }
+
+  .form-check-box {
+    margin-top: 5px;
+    margin-left: 2.25rem;
+  }
+  .form-check-residence {
+    margin-top: 0px;
+    margin-left: 10px;
+  }
+
+  .usericon-align {
+    margin-top: 5px;
+    margin-left: -25px;
+  }
+  .edit_ico {
+    margin: 6px;
+    padding: 2px;
+  }
+
+  .align-residence {
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+  .align-deceased {
+    margin-top: 30px;
+  }
+  .icons-align {
+    margin-top: 0px;
+    margin-left: -40px;
+    padding: 2px 0 0 30px;
+  }
+
+  .customFormInputContainer {
+    margin-bottom: 0px;
+    .customFormInput {
+      margin-bottom: 2px !important;
+      display: flex;
+      .inputContainer {
+        flex: 10;
+      }
+      .inputWidth {
+        width: 460px;
+      }
+      .iconContainer {
+        width: 30px;
+        padding-top: 8px;
+        text-align: center;
+      }
+      .plusIcon {
+        margin-left: -200px;
+      }
+    }
+  }
+
+  .scroll-table {
+    max-height: 150px;
+    max-width: 1115px;
+    border-right: 1px solid #000;
+    overflow-y: scroll;
+    padding-right: 0px;
+    margin-top: -5px;
+  }
+  tbody {
+    max-height: 150px;
+    max-width: 1250px;
+    overflow-y: scroll;
+  }
+
+  .table td {
+    min-height: 49px;
+  }
+
+  .form-checkbox-align {
+    margin-bottom: 20px;
+  }
+  .checkbox {
+    margin-left: 5px;
+    margin-top: 2px;
+  }
+  table {
+    margin: 0px;
+    padding: 0px;
+  }
+  th:first-child {
+    width: 1px;
+  }
+  td:first-child {
+    width: 1px;
+  }
+  td:nth-child(3) {
+    width: 100px;
+  }
+  td:nth-child(4) {
+    width: 157px;
+  }
+
+  th:nth-child(3) {
+    width: 100px;
+  }
+  th:nth-child(4) {
+    width: 176px;
+  }
+  thead {
+    background-color: rgba(0, 0, 0, 0.16);
+  }
+
+  input[checkbox] {
+    transform: scale(2);
+  }
+  table input[type="checkbox"] {
+    transform: scale(0.8);
+  }
+  .form-check-input {
+    width: 20px !important;
+    height: 20px !important;
+    margin-top: -0.2rem;
+    margin-left: -15px;
+  }
+
+  .plusicon {
+    padding: 2px;
+    margin: 2px;
+    margin-left: 72px;
+  }
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #e9ecefc7;
+  }
+  .togglespan {
+    display: inline-block;
+  }
+  .toggleupperspace {
+    padding-top: 25px;
+    margin-left: 25px;
+  }
+  .labelposition {
+    margin-right: 20px;
+  }
+  .table thead th {
+    vertical-align: initial;
+  }
+  .form-check-align {
+    padding-left: 1rem;
+  }
+  .contactColSize {
+    max-width: 150px;
+  }
+  .tax {
+    max-width: 150px;
+  }
+  .horizontalSeparator {
+    border: none;
+    height: 1px;
+    border-top: 1px solid #333;
+  }
+  label {
+    display: inline-block;
+    margin-bottom: -0.5rem;
+  }
+
+  .fa-folder:before {
+    content: "\f07b";
+    margin-left: 72px;
+  }
+  .form-control-te {
+    width: 107%;
+    margin-bottom: 20px;
+  }
+  .required {
+    color: red !important;
+  }
+
+  .table {
+    margin-bottom: -1rem;
+  }
+
+  .tableborder {
+    padding: 15px;
+    padding-right: 8px;
+    margin-top: -34px;
+  }
+
+  .Esignatories {
+    .signotorydeleteicons {
+      margin-left: 20px;
+      padding-left: 0px;
+      padding-right: 20px;
+    }
+
+    .signatoryediticon {
+      margin-left: -20px;
+    }
+
+    .AddSignatory {
+      margin-left: 85px;
+    }
+
+    .mLeft {
+      margin-left: 18px;
+    }
+    .esignatoriesTable {
+      th:nth-child(2) {
+        width: auto;
+      }
+      th:nth-child(3) {
+        width: auto;
+      }
+      th:nth-child(4) {
+        width: 74px;
+      }
+      td:nth-child(2) {
+        width: 315px;
+      }
+      td:nth-child(3) {
+        width: 315px;
+      }
+      td:nth-child(4) {
+        width: 58px;
+      }
+
+      .rowSelected {
+        td {
+          background-color: #ffa500a8 !important;
+        }
+      }
+
+      .rowHover:hover {
+        td {
+          background-color: #ffa500a8 !important;
+        }
+      }
+    }
+    .tableInputSignaturies {
+      .entityInput {
+        position: relative;
+        ul {
+          background-color: white;
+          margin: 0;
+          padding: 0px;
+          position: absolute;
+          z-index: 10;
+          top: 22px;
+          width: calc(100% - 8px);
+          border-radius: 5px;
+          li {
+            list-style: none;
+            padding: 5px;
+            a,
+            a:hover {
+              text-decoration: none;
+              color: #212121;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ENameFormRow {
+    .marginco {
+      margin-left: 15px;
+    }
+  }
+}
+
+.documentsTableComponent {
+  .glasspane {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba($color: white, $alpha: 0.5);
+    opacity: 0.5;
+  }
+
+  .popupWrapper {
+    display: flex;
+    position: fixed;
+    width: 620px;
+    flex-direction: column;
+    height: 50vh;
+    left: calc(50% - 310px);
+    top: 25vh;
+    overflow: scroll;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    z-index: 10;
+  }
+  .documentPopup {
+    width: 600px;
+    height: 150px;
+    z-index: 11;
+    border-bottom: 1px solid black;
+  }
+
+  .savePop {
+    margin-right: 20px;
+  }
+
+  .companySize {
+    padding: 9px;
+    border: 1px solid #000;
+  }
+  .divSize {
+    padding: 9px;
+    border: 1px solid #000;
+  }
+  .docSize {
+    padding: 9px;
+    border: 1px solid #000;
+  }
+}
+
+//Document table start
+.document-Tabel {
+  .table-Head {
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    thead {
+      td,
+      th {
+        border-left: 1px solid black; /* No more visible border */
+        border-right: 1px solid black; /* No more visible border */
+        border-top: 1px solid black; /* No more visible border */
+        height: 30px;
+        transition: all 0.3s; /* Simple transition for hover effect */
+        color: black;
+        border-spacing: 0;
+        padding: 5px;
+        input[type="checkbox"] {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      th {
+        background: #dfdfdf; /* Darken header a bit */
+        font-weight: bold;
+      }
+
+      td {
+        background: #fafafa;
+        text-align: center;
+      }
+    }
+
+    /* Cells in even rows (2,4,6...) are one color */
+    tr:nth-child(even) td {
+      background: #f1f1f1;
+    }
+
+    /* Cells in odd rows (1,3,5...) are another (excludes header cells)  */
+    tr:nth-child(odd) td {
+      background: #fefefe;
+    }
+  }
+
+  .table-Body {
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    tbody {
+      td,
+      th {
+        border-left: 1px solid black; /* No more visible border */
+        height: 30px;
+        transition: all 0.3s; /* Simple transition for hover effect */
+        color: black;
+        border-spacing: 0;
+        padding: 5px;
+        input[type="checkbox"] {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      th {
+        background: #dfdfdf; /* Darken header a bit */
+        font-weight: bold;
+      }
+
+      td {
+        background: #fafafa;
+        text-align: center;
+      }
+
+      .rowSelected {
+        td {
+          background-color: #ffa500a8 !important;
+        }
+      }
+
+      .rowHover:hover {
+        td {
+          background-color: #ffa500a8 !important;
+        }
+      }
+    }
+
+    /* Cells in even rows (2,4,6...) are one color */
+    tr:nth-child(even) td {
+      background: #f1f1f1;
+    }
+
+    /* Cells in odd rows (1,3,5...) are another (excludes header cells)  */
+    tr:nth-child(odd) td {
+      background: #fefefe;
+    }
+    tr:nth-last-child() td {
+      background: #fefefe;
+    }
+  }
+}
+//Document table end
+
+//mydoctable
+
+.DocumentsTable {
+  .tabelMargin {
+    margin-bottom: -6px;
+  }
+}
+
+.commentsTable {
+  .table-Head {
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    thead {
+      td,
+      th {
+        border-left: 1px solid black; /* No more visible border */
+        border-right: 1px solid black; /* No more visible border */
+        border-top: 1px solid black; /* No more visible border */
+        height: 30px;
+        transition: all 0.3s; /* Simple transition for hover effect */
+        color: black;
+        border-spacing: 0;
+        padding: 5px;
+        input[type="checkbox"] {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      th {
+        background: #dfdfdf; /* Darken header a bit */
+        font-weight: bold;
+      }
+
+      td {
+        background: #fafafa;
+        text-align: center;
+      }
+    }
+
+    /* Cells in even rows (2,4,6...) are one color */
+    tr:nth-child(even) td {
+      background: #f1f1f1;
+    }
+
+    /* Cells in odd rows (1,3,5...) are another (excludes header cells)  */
+    tr:nth-child(odd) td {
+      background: #fefefe;
+    }
+  }
+
+  .table-Body {
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    tbody {
+      td,
+      th {
+        border-left: 1px solid black; /* No more visible border */
+        height: 30px;
+        transition: all 0.3s; /* Simple transition for hover effect */
+        color: black;
+        border-spacing: 0;
+        padding: 5px;
+        input[type="checkbox"] {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      th {
+        background: #dfdfdf; /* Darken header a bit */
+        font-weight: bold;
+      }
+
+      td {
+        background: #fafafa;
+        text-align: center;
+      }
+
+      .rowSelected {
+        td {
+          background-color: #ffa500a8 !important;
+        }
+      }
+
+      .rowHover:hover {
+        td {
+          background-color: #ffa500a8 !important;
+        }
+      }
+    }
+
+    /* Cells in even rows (2,4,6...) are one color */
+    tr:nth-child(even) td {
+      background: #f1f1f1;
+    }
+
+    /* Cells in odd rows (1,3,5...) are another (excludes header cells)  */
+    tr:nth-child(odd) td {
+      background: #fefefe;
+    }
+    tr:nth-last-child() td {
+      background: #fefefe;
+    }
+  }
+}
+
+//entity
